@@ -16,12 +16,20 @@ print("'{}', '{}', {}, {}".format(*a[1:-1]))
 print("{}".format(a[1:-1]).replace("]", "").replace("[", ""))
 
 # soal 3
-print("\nsoal 3:")
 a = [1.32, 22.1, 2.34]
 b = ["1", "13b", "aa1"]
 c = [3, 40, 100]
 # combine list
+
+# if the output is one dimention
 print("{}".format(a + c + b))
+
+# if the output is two dimentions
+d = []
+d.append(a)
+d.append(c)
+d.append(b)
+print("{}".format(d))
 
 # soal 4
 print("\nsoal 4:")
@@ -61,6 +69,9 @@ a[0][2] = 10
 # change list value
 a[1][0] = 11
 print("{}".format(a[0] + a[1]))
+
+# if the output is two dimentions
+print("{}".format(a))
 
 # soal 8
 print("\nsoal 8:")
