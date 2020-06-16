@@ -1,6 +1,6 @@
 # Soal 1
 print("\n Soal 1")
-print(help(len))
+help(len)
 
 # Soal 2
 print("\n Soal 2")
