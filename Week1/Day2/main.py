@@ -1,98 +1,72 @@
-# soal 1
-print("\nsoal 1:")
+# Soal 1
+print("\n Soal 1")
+print(help(len))
+
+# Soal 2
+print("\n Soal 2")
 print(
-    "List bisa berisi tipe data apapun dan tidak harus semua data berisi tipe data yang sama"
+    "Function that has already defined in python as Object.",
+    "So we can call it whenever we need without any external module/library",
+)
+arr = [1, 2, 3, 4]
+# len
+print("(len) array length: ", len(arr))
+# max
+print("(max) max element of array: ", max(arr))
+# map
+print("(map) array element plus 2: ", list(map(lambda x: x + 2, arr)))
+
+# Soal 3
+print("\n Soal 3")
+print(
+    "Method is function that object' have.",
+    "For example, String object has its own method such as upper, split, join, etc.",
+    "List object has its own method such as append, clear, remove, etc. \n",
+    "A function is a block of code which only runs when it is called.",
+    "We can pass data, known as parameters, into a function. ",
+    "A function can return data as a result.",
 )
 
-# soal 2
-print("\nsoal 2:")
-a = ["1", "13b", "aa1", 1.32, 22.1, 2.34]
-# slicing list
-# quotes will dissapear
-# so i added the singel quotes manually (because list function or looping is not already trained)
-print("'{}', '{}', {}, {}".format(*a[1:-1]))
+# Soal 4
+print("\nSoal 4")
+kalimat = "Corona cepat selesai"
 
-# if allowed to use replace method
-print("{}".format(a[1:-1]).replace("]", "").replace("[", ""))
+# gunakan method untuk mengubah nilai kalimat menjadi uppercase semua kemudian tampilkan hasilnya
+print("Uppercase: {}".format(kalimat.upper()))
 
-# soal 3
-a = [1.32, 22.1, 2.34]
-b = ["1", "13b", "aa1"]
-c = [3, 40, 100]
-# combine list
+# gunakan method untuk menghitung berapa huruf e di dalam kalimat
+print("Amount of e char: {}".format(kalimat.count("e")))
 
-# if the output is one dimention
-print("{}".format(a + c + b))
+# Soal 5
+print("\nSoal 5")
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
 
-# if the output is two dimentions
-d = []
-d.append(a)
-d.append(c)
-d.append(b)
-print("{}".format(d))
+# gunakan suatu method dari object list untuk menampilkan index dari nilai 20
+print("Index of element 20 is {}".format(areas.index(20)))
 
-# soal 4
-print("\nsoal 4:")
-a = [[5, 9, 8], [0, 0, 6]]
-# subsetting
-print(a[1][1:3])
-
-# without brackets
-print("{}, {}".format(*a[1][1:3]))
-
-# soal 5
-print("\nsoal 5:")
-p = [0, 5, 2, 10, 4, 9]
-# ordered list
-print(sorted(p, reverse=False))
-# ordered list without brackets
-print("{}".format(sorted(p, reverse=False)).replace("[", "").replace("]", ""))
-# get max value of list
-print(max(p))
-
-# soal 6
-print("\nsoal 6:")
-a = [1, 3, 5]
-b = [5, 1, 3]
-# combine list
-print(b + a)
-
-# without brackets
-print("{}".format(b + a).replace("[", "").replace("]", ""))
-
-
-# soal 7
-print("\nsoal 7:")
-a = [[5, 9, 8], [0, 0, 6]]
-# change list value
-a[0][2] = 10
-# change list value
-a[1][0] = 11
-print("{}".format(a[0] + a[1]))
-
-# if the output is two dimentions
-print("{}".format(a))
-
-# soal 8
-print("\nsoal 8:")
-areas = [
-    "hallway",
-    11.25,
-    "kitchen",
-    18.0,
-    "chill zone",
-    20.0,
-    "bedroom",
-    10.75,
-    "bathroom",
-    10.50,
-    "poolhouse",
-    24.5,
-    "garage",
-    15.45,
-]
-
-# Hilangkan elemen yang bernilai "bathroom" dan 10.50 dalam satu statement code
-del areas[areas.index("bathroom")]
-del areas[areas.index(10.5)]
+# gunakan suatu method dari object list untuk menambahkan nilai 15.5 kedalam list ke index terakhirnya
+areas.append(15.5)
 print(areas)
+
+# Soal 6
+print("\nSoal 6")
+obj_list = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+
+def mean_list(inp_list: list) -> float:
+    return sum(inp_list) / len(inp_list)
+
+
+print(mean_list(obj_list))
+
+# Soal 7
+print("\nSoal 7")
+obj_list = [2, 4, 5, 6]
+obj_pengali = [1, 2, 3]
+
+
+def kali_list(in_list: list, times_list: list) -> list:
+    return in_list + times_list
+
+
+print(kali_list(obj_list, obj_pengali))

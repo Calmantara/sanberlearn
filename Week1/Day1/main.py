@@ -35,8 +35,17 @@ print(
     )
 )
 
+print(
+    "Hello sanbercode, saya "
+    + firstname
+    + " "
+    + lastname
+    + "! saya siap belajar python data science."
+)
 # Soal
 print("\nsoal 5:")
 p = 9.99999
 q = "the number: "
 print("{} {}".format(q, p))
+print(q, p)
+print(q + str(p))
