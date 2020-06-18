@@ -1,11 +1,14 @@
 # Online Coding Class Weeks 1
 
+===========================================
+
 This is code for sanber coding online class.
-Day 1 - Hello Python
-Day 2 - Functions, Method and Getting Help
-Day 3 - Logic Control Flow and Loop
-Day 4 - Python List Dictionary
-Day 5 - Python Basic Data Science
+
+- Day 1 - Hello Python
+- Day 2 - Functions, Method and Getting Help
+- Day 3 - Logic Control Flow and Loop
+- Day 4 - Python List Dictionary
+- Day 5 - Python Basic Data Science
 
 ## Installation
 
